@@ -30,7 +30,7 @@ get_header();
 			}?>
 
 			<?php if(get_field('travel_grid_shortcode')): ?>
-				<div class="black-bg"><span><?php the_field('travel_grid_shortcode');?></span></div>
+				<div class="black-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
