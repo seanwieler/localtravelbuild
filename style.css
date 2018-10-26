@@ -1146,6 +1146,9 @@ header .site-branding .site-description {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+ul#menu-main-menu {
+  text-align: center;
+}
 .foot-text-color {
   color: #ffffff;
 }
