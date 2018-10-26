@@ -29,7 +29,9 @@ get_header();
 				<div><?php echo wp_get_attachment_image( $image, $size );?></div><?php
 			}?>
 
-			<div class="black-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>
+			<?php if(get_field('travel_grid_shortcode')): ?>
+				<div class="black-bg"><span><?php the_field('travel_grid_shortcode');?></span></div>
+			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
 				<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
