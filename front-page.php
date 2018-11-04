@@ -35,7 +35,7 @@ get_header();?>
 			<div class="rp-background">
 				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
 				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-2]'); ?></div>
-						<div class="button-center"><?php echo do_shortcode('[maxbutton id="1"]');?></div>
+						<div class="button-center"><?php echo do_shortcode('[maxbutton id="2"]');?></div>
 			</div> 
 			<?php endif;
 		endwhile; // End of the loop.
