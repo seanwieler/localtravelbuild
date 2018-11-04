@@ -724,7 +724,7 @@ span.rpwwt-post-title:hover {
   width: auto;
 }
 .front-hero {
-  margin-top: -63px;
+  margin-top: -80px;
 }
 /* headlines with lines */
 .decorated {
@@ -1151,6 +1151,9 @@ header .site-branding .site-description {
 --------------------------------------------------------------*/
 ul#menu-main-menu {
   text-align: center;
+}
+#wp-megamenu-menu-1 > .wpmm-nav-wrap .wpmm_brand_logo_wrap img {
+  padding-top: 15px;
 }
 .foot-text-color {
   color: #ffffff;
