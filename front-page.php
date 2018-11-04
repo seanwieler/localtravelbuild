@@ -26,7 +26,7 @@ get_header();
 			$image = get_field('hero_image');
 			$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
-				<div><?php echo wp_get_attachment_image( $image, $size );?></div><?php
+				<div class="front-hero"><?php echo wp_get_attachment_image( $image, $size );?></div><?php
 			}?>
 
 			<div class="black-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>

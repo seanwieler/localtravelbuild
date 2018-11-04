@@ -723,6 +723,9 @@ span.rpwwt-post-title:hover {
   height: 72px;
   width: auto;
 }
+.front-hero {
+  margin-top: -63px;
+}
 /* headlines with lines */
 .decorated {
   overflow: hidden;
