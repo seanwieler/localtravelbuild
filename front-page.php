@@ -23,15 +23,17 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			$image = get_field('hero_image');
+			//$image = get_field('hero_image');
 			//$size = '50%'; // (thumbnail, medium, large, full or custom size)
-			if( $image ) { ?>
-<<<<<<< HEAD
-				<div class="front-hero"><?php echo wp_get_attachment_image( $image, $size );?></div><?php
-=======
-				<div class="front-hero"><?php echo wp_get_attachment_image( $image);?></div><?php
->>>>>>> a6e0423a86ed71a5cfebab623f68f3be014bd1c8
-			}?>
+			if(get_field('hero_image')): { ?>
+				<div class="front-hero" style="background-image: url(<?php the_field('hero_image'); ?>);">
+					<div class="hero-txt-bg">
+						<div class="hero-title"><h1>life is a never ending journey</h1></div>
+						<div class="hero-text"><p>blah blah blah blah</p></div>
+					</div>
+				</div><?php
+			}
+			endif;?>
 
 			<div class="white-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>
 

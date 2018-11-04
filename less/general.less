@@ -70,12 +70,6 @@ h1 {
 	margin: 0.67em 0;
 }
 
-h2 {
-	font-size: 50px;
-	font-family: "roboto condensed",sans-serif;
-	text-transform: uppercase;
-}
-
 /* ## Grouping content
 	 ========================================================================== */
 
@@ -391,7 +385,7 @@ input,
 select,
 optgroup,
 textarea {
-	font-family: "roboto",sans-serif;
+	font-family: @font-body;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -399,6 +393,16 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+}
+
+h1 {
+	font-family: @font-titles;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: @font-subtitles;
+	text-transform: uppercase;
 }
 
 p {
@@ -774,6 +778,26 @@ span.rpwwt-post-title {
 
 .front-hero {
 	margin-top: -80px;
+	height:100vh;
+	width: 100vw;
+}
+
+.hero-txt-bg {
+	position: absolute;
+	top: 70%;
+	left: 70%;
+	width: 50%;
+	transform: translateX(-30%);
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-left: 20px;
+}
+
+.hero-text {
+	color: @brand-white;
+}
+
+.hero-title {
+	color: @brand-yellow;
 }
 
 /* headlines with lines */
