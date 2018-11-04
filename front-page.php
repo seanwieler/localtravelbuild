@@ -28,8 +28,8 @@ get_header();
 			if(get_field('hero_image')): { ?>
 				<div class="front-hero" style="background-image: url(<?php the_field('hero_image'); ?>);">
 					<div class="hero-txt-bg">
-						<div class="hero-title"><h1>life is a never ending journey</h1></div>
-						<div class="hero-text"><p>blah blah blah blah</p></div>
+						<div class="hero-title"><h1><?php the_field('hero_title');?></h1></div>
+						<div class="hero-text"><p><?php the_field('hero_text');?></p></div>
 					</div>
 				</div><?php
 			}
