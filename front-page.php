@@ -45,12 +45,12 @@ get_header();
 			
 			if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
-				<div class="white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
+				<div class="white-bg"><h1><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></h1></div>
 				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-2]'); ?></div>
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> 
 			<?php endif;?>
 
+			<!--<?php get_template_part( 'template-parts/content', 'page' ); ?> -->
 			<div class="white-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div><?php
 
 			$image2 = get_field('section_2_image');

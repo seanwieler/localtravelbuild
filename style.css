@@ -876,7 +876,7 @@ h6.widget-title {
   color: #ffffff;
   font-size: 20px;
 }
-aside#recent-posts-widget-with-thumbnails-3 {
+aside#recent-posts-widget-with-thumbnails-2 {
   position: absolute;
   left: 20%;
   width: 100%;
@@ -1220,28 +1220,28 @@ ul#menu-main-menu {
 .widget select {
   max-width: 100%;
 }
-.rpw-home aside#recent-posts-widget-with-thumbnails-3 {
+.rpw-home aside#recent-posts-widget-with-thumbnails-2 {
   position: static;
 }
-.rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li {
+.rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li {
   display: inline-block;
   width: 33%;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media only screen and (max-width:670px) {
-  .rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li {
+  .rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li {
     width: 100%;
     padding: 0 10px 20px 10px;
   }
 }
-.rpw-home aside#recent-posts-widget-with-thumbnails-3 > * > ul > li img {
+.rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li img {
   width: 100%;
   height: auto;
   max-width: none !important;
 }
 h6.widget-title {
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   margin-top: 0px;
   margin-left: 14%;
