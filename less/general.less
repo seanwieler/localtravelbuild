@@ -832,7 +832,29 @@ span.rpwwt-post-title {
 	}
 }
 
-.section-content-with-bg() {
+.maxbutton-1.maxbutton.maxbutton-hero-story {
+	margin-bottom: 20px;
+}
+
+.button-center {
+	text-align: center;
+}
+
+.decorated {
+	overflow: hidden;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 40px;
+	font-family: @font-titles;	
+	text-transform: uppercase;
+	font-weight: 700;
+	@media @phone {
+		padding-top: 30px;
+		font-size: 25px;
+	}
+}
+
+/*.section-content-with-bg() {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -843,17 +865,17 @@ span.rpwwt-post-title {
 	@media @tablet {
 		width: 80%;
 	}
-}
+}*/
 
-.section-content-blackbg {
+/*.section-content-blackbg {
 	.section-content-with-bg();
 	color:	#ffffff;
 	> a {
 		font-size: 2em;
 	}
-}
+}*/
 
-.section-content-whitebg {
+/*.section-content-whitebg {
 	.section-content-with-bg();
 	color: #000000;
 	> h2 > a {
@@ -863,7 +885,7 @@ span.rpwwt-post-title {
 		color: #5a3fd6;
 	}
 	
-}
+}*/
 
 .black-bg {
 	color: #ffffff;
@@ -874,32 +896,22 @@ span.rpwwt-post-title {
 	color: #000000;
 }
 
-.new-line{
-	display: block;
+.entry-footer {
+	display: none;
+}
+
+.entry-title {
+	display: none;
 }
 
 .rp-background {
     background-image: url("./img/map-pattern.jpg"); /* The image used */
  	background-color: #cccccc; /* Used if the image is unavailable */
-  	height: 700px; /*You must set a specified height */
+  	//height: auto; /*You must set a specified height */
   	background-position: center; /* Center the image */
-  	background-repeat: repeat; /* Do not repeat the image */
-	//background-size: cover; /* Resize the background image to cover the entire container */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 	//opacity: 0.2;
-	h1 {
-		margin: 0;
-	}
-}
-
-.white-background {
-	background-color: #ffffff;
-	height: 600px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#ssttbutton {
-	bottom: 50px;
 }
 
 .wpcf7-form {
@@ -912,12 +924,12 @@ h6.widget-title {
     font-size: 20px;
 }
 
-aside#recent-posts-widget-with-thumbnails-2 {
+/*aside#recent-posts-widget-with-thumbnails-2 {
     position: absolute;
     left: 20%;
     width: 100%;
     margin: 20px 0 20px 0;
-}
+}*/
 
 article.has-thumb {
     margin-left: 10%;
@@ -931,8 +943,8 @@ article.has-thumb {
 }
 
 .fmgc-columns {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .rpwwt-widget ul li {

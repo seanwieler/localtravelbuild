@@ -26,9 +26,9 @@
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'travelblog' ), 'travelblog', '<a href="http://underscores.me/">Sean Wieler</a>' );
 				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		</div>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

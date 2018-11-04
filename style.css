@@ -790,49 +790,57 @@ span.rpwwt-post-title:hover {
     font-size: 10px;
   }
 }
-.section-content-blackbg {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-  color: #ffffff;
+.maxbutton-1.maxbutton.maxbutton-hero-story {
+  margin-bottom: 20px;
+}
+.button-center {
+  text-align: center;
+}
+.decorated {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 40px;
+  font-family: 'Nixie One', cursive;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 @media only screen and (max-width:670px) {
-  .section-content-blackbg {
-    width: 60%;
+  .decorated {
+    padding-top: 30px;
+    font-size: 25px;
   }
 }
-@media only screen and (min-width:671px) and (max-width:980px) {
-  .section-content-blackbg {
-    width: 80%;
-  }
-}
-.section-content-blackbg > a {
-  font-size: 2em;
-}
-.section-content-whitebg {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-  color: #000000;
-}
-@media only screen and (max-width:670px) {
-  .section-content-whitebg {
-    width: 60%;
-  }
-}
-@media only screen and (min-width:671px) and (max-width:980px) {
-  .section-content-whitebg {
-    width: 80%;
-  }
-}
-.section-content-whitebg > h2 > a {
-  color: #3992E3;
-}
-.section-content-whitebg > h2 > a:hover {
-  color: #5a3fd6;
-}
+/*.section-content-with-bg() {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 30px;
+	@media @phone {
+		width: 60%;
+	}
+	@media @tablet {
+		width: 80%;
+	}
+}*/
+/*.section-content-blackbg {
+	.section-content-with-bg();
+	color:	#ffffff;
+	> a {
+		font-size: 2em;
+	}
+}*/
+/*.section-content-whitebg {
+	.section-content-with-bg();
+	color: #000000;
+	> h2 > a {
+		color: #3992E3;
+	}
+	> h2 > a:hover {
+		color: #5a3fd6;
+	}
+	
+}*/
 .black-bg {
   color: #ffffff;
   margin-bottom: 40px;
@@ -840,33 +848,23 @@ span.rpwwt-post-title:hover {
 .white-bg {
   color: #000000;
 }
-.new-line {
-  display: block;
+.entry-footer {
+  display: none;
+}
+.entry-title {
+  display: none;
 }
 .rp-background {
   background-image: url("./img/map-pattern.jpg");
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */
-  height: 700px;
-  /*You must set a specified height */
   background-position: center;
   /* Center the image */
-  background-repeat: repeat;
-  /* Do not repeat the image */
-}
-.rp-background h1 {
-  margin: 0;
-}
-.white-background {
-  background-color: #ffffff;
-  height: 600px;
-  background-position: center;
   background-repeat: no-repeat;
+  /* Do not repeat the image */
   background-size: cover;
-}
-#ssttbutton {
-  bottom: 50px;
+  /* Resize the background image to cover the entire container */
 }
 .wpcf7-form {
   margin: 30px 20%;
@@ -876,12 +874,12 @@ h6.widget-title {
   color: #ffffff;
   font-size: 20px;
 }
-aside#recent-posts-widget-with-thumbnails-2 {
-  position: absolute;
-  left: 20%;
-  width: 100%;
-  margin: 20px 0 20px 0;
-}
+/*aside#recent-posts-widget-with-thumbnails-2 {
+    position: absolute;
+    left: 20%;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}*/
 article.has-thumb {
   margin-left: 10%;
   margin-right: 10%;
@@ -892,8 +890,8 @@ article.has-thumb {
   padding-right: 10%;
 }
 .fmgc-columns {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .rpwwt-widget ul li {
   overflow: hidden;
@@ -1150,62 +1148,63 @@ ul#menu-main-menu {
 .foot-text-color {
   color: #ffffff;
 }
-/*WPBeginner Footer Bar*/
+/*WPBeginner Footer Bar
+ 
 #fixedbar {
-  background: #000;
-  bottom: 0px;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 0;
-  padding: 0px 0;
-  position: fixed;
-  font-size: 16px;
-  width: 100%;
-  z-index: 99999;
-  float: left;
-  vertical-align: middle;
-  margin: 0px 0 0;
-  opacity: 0.95;
-  font-weight: bold;
-}
-.boxfloat {
-  text-align: center;
-  width: 920px;
-  margin: 0 auto;
-}
-#tips,
-#tips li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-#tips {
-  width: 920px;
-  font-size: 20px;
-  line-height: 120%;
-}
-@media only screen and (max-width:670px) {
-  #tips {
-    width: 300px;
-    font-size: 18px;
-    text-align: center;
-  }
-}
-#tips li {
-  padding: 15px 0;
-  display: none;
-}
-#tips li a {
-  color: #fff;
-}
-#tips li a:hover {
-  text-decoration: none;
-}
-@media only screen and (max-width:670px) {
-  .footer-mega-col-wrap {
-    display: none;
-  }
-}
+	background: #000; 
+	bottom: 0px; 
+	color:#fff; 
+	font-family: Arial, Helvetica, sans-serif; 
+	left:0; 
+	padding: 0px 0; 
+	position:fixed; 
+	font-size:16px; 
+	width:100%; 
+	z-index:99999; 
+	float:left; 
+	vertical-align:middle; 
+	margin: 0px 0 0; 
+	opacity: 0.95; 
+	font-weight: bold;
+	
+	}
+	.boxfloat {
+	text-align:center; 
+	width:920px; 
+	margin:0 auto;
+	}
+	 
+	#tips, #tips li {
+	margin:0; 
+	padding:0; 
+	list-style:none;
+	}
+	#tips {
+	width:920px; 
+	font-size:20px; 
+	line-height:120%;
+	@media @phone {
+		width: 300px;
+		font-size: 18px;
+		text-align: center;
+	}
+	}
+	#tips li {
+	padding: 15px 0; 
+	display:none;
+	}
+	#tips li a{
+	color: #fff;
+	}
+	#tips li a:hover {
+	text-decoration: none;
+	}
+
+	@media @phone {
+		.footer-mega-col-wrap {
+		  display: none;
+		}
+	  }*/
 .site-info.foot-text-color {
   border-top: #545454 solid 2px;
   padding: 10px;
@@ -1221,13 +1220,15 @@ ul#menu-main-menu {
   max-width: 100%;
 }
 .rpw-home aside#recent-posts-widget-with-thumbnails-2 {
-  position: static;
+  position: relative;
 }
 .rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li {
   display: inline-block;
   width: 33%;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 @media only screen and (max-width:670px) {
   .rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li {
