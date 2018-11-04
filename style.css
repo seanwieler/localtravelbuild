@@ -790,78 +790,6 @@ span.rpwwt-post-title:hover {
     font-size: 10px;
   }
 }
-/* headlines with lines */
-.decorated {
-  overflow: hidden;
-  text-align: center;
-  padding-top: 80px;
-  font-size: 50px;
-  font-family: 'Nixie One', cursive;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-@media only screen and (max-width:670px) {
-  .decorated {
-    padding-top: 30px;
-    font-size: 25px;
-  }
-}
-.decorated > span {
-  position: relative;
-  display: inline-block;
-}
-.decorated > span:before,
-.decorated > span:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  border-bottom: 5px solid;
-  width: 400px;
-  /* half of limiter*/
-  margin: 0 30px;
-  /*@media @tablet {
-				width: 150px;
-			}*/
-}
-@media only screen and (max-width:670px) {
-  .decorated > span:before,
-  .decorated > span:after {
-    width: 50px;
-  }
-}
-.decorated > span:before {
-  right: 100%;
-}
-.decorated > span:after {
-  left: 100%;
-}
-/* @media @phone {
-	.decorated {
-		
-	> span {
-		position: relative;
-		display: inline-block;
-		&:before, &:after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			border-bottom: 5px solid;
-			width: 50px; 
-			margin: 0 30px;
-		}
-		&:before {right: 100%;}
-		&:after {left: 100%;}
-		}
-	}
-}*/
-@media only screen and (min-width:671px) and (max-width:980px) {
-  .decorated > span:before,
-  .decorated > span:after {
-    content: '';
-    width: 150px;
-  }
-}
-/* headline decoration with lines on each side of section title */
 .section-content-blackbg {
   width: 60%;
   margin-left: auto;
@@ -916,17 +844,19 @@ span.rpwwt-post-title:hover {
   display: block;
 }
 .rp-background {
-  background-image: url("./img/travel-blog-bg.png");
+  background-image: url("./img/map-pattern.jpg");
   /* The image used */
   background-color: #cccccc;
   /* Used if the image is unavailable */
-  /*height: 700px; You must set a specified height */
+  height: 700px;
+  /*You must set a specified height */
   background-position: center;
   /* Center the image */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
+}
+.rp-background h1 {
+  margin: 0;
 }
 .white-background {
   background-color: #ffffff;

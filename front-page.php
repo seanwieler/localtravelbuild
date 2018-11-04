@@ -36,7 +36,7 @@ get_header();
 			endif;
 					
 			if(get_field('section_1_title')): ?>
-				<div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div>
+				<div class="rp-background white-bg"><h1><?php the_field('section_1_title');?></h1></div>
 			<?php endif;?>
 
 			<?php if(get_field('section_1_content')): ?>
@@ -45,8 +45,8 @@ get_header();
 			
 			if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
-				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
-				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-3]'); ?></div>
+				<div class="white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
+				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-2]'); ?></div>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> 
 			<?php endif;?>
