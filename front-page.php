@@ -33,14 +33,8 @@ get_header();
 					</div>
 				</div><?php
 			}
-			endif;?>
-
-			<div class="white-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>
-
-			<?php if(get_field('section_1_content')): ?>
-				<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
-			<?php endif;
-			
+			endif;
+					
 			if(get_field('section_1_title')): ?>
 				<div class="decorated black-bg"><span><?php the_field('section_1_title');?></span></div>
 			<?php endif;?>
@@ -55,7 +49,9 @@ get_header();
 				<div class="rpw-home"><?php echo do_shortcode('[do_widget id=recent-posts-widget-with-thumbnails-3]'); ?></div>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			</div> 
-			<?php endif;
+			<?php endif;?>
+
+			<div class="white-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div><?php
 
 			$image2 = get_field('section_2_image');
 			$size2 = '50%'; // (thumbnail, medium, large, full or custom size)
