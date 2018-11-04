@@ -29,8 +29,9 @@ get_header();?>
 						<div class="hero-text"><p><?php the_field('hero_text');?></p></div>
 						<div><?php echo do_shortcode('[maxbutton id="1"]');?></div>
 					</div>
-				</div><?php
-			endif;
+				</div>
+			<?php endif;
+
 			if(get_field('recent_posts_title')): ?>
 			<div class="rp-background">
 				<div class="decorated white-bg"><span><?php echo get_post_meta(get_the_ID(), "recent_posts_title", true);?></span></div>
@@ -38,6 +39,20 @@ get_header();?>
 						<div class="button-center"><?php echo do_shortcode('[maxbutton id="2"]');?></div>
 			</div> 
 			<?php endif;
+
+			if(get_field('section_2_left_image')): ?>
+			<div>
+				<div class="split-image" style="background-image: url(<?php the_field('section_2_left_image'); ?>)">
+					<div class="link-txt-bg">
+						<div class="hero-title"><h1>travel stories</h1></div>
+					</div>
+				</div>
+				<div class="split-image" style="background-image: url(<?php the_field('section_2_right_image'); ?>)">
+					<div class="hero-title"><h1>photography</h1></div>
+				</div>
+			</div>
+			<?php endif;
+
 		endwhile; // End of the loop.
 
 get_sidebar();

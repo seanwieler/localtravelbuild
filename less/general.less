@@ -832,15 +832,9 @@ span.rpwwt-post-title {
 	}
 }
 
-.maxbutton-1.maxbutton.maxbutton-hero-story {
+.maxbutton-1.maxbutton.maxbutton-hero-story,
+.maxbutton-2.maxbutton.maxbutton-latest-stories {
 	margin-bottom: 20px;
-}
-
-.maxbutton-2.maxbutton.maxbutton-stories {
-	margin-bottom: 20px;
-	&.mb-text {
-		color: @brand-black;
-	}
 }
 
 .button-center {
@@ -858,6 +852,20 @@ span.rpwwt-post-title {
 	@media @phone {
 		padding-top: 30px;
 		font-size: 25px;
+	}
+}
+
+.link-txt-bg {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(50%, 50%);
+	background-color: rgba(0, 0, 0, 0.9);
+	@media @phone {position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		transform: translate(0, 0);
 	}
 }
 
@@ -901,6 +909,7 @@ span.rpwwt-post-title {
 
 .white-bg {
 	color: #000000;
+	margin-bottom: 40px;
 }
 
 .entry-footer {
@@ -918,7 +927,7 @@ span.rpwwt-post-title {
   	background-position: center; /* Center the image */
   	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
-	//opacity: 0.2;
+	//opacity: 0.3;
 }
 
 .wpcf7-form {
