@@ -24,12 +24,16 @@ get_header();
 			the_post();
 
 			$image = get_field('hero_image');
-			$size = '50%'; // (thumbnail, medium, large, full or custom size)
+			//$size = '50%'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) { ?>
+<<<<<<< HEAD
 				<div class="front-hero"><?php echo wp_get_attachment_image( $image, $size );?></div><?php
+=======
+				<div class="front-hero"><?php echo wp_get_attachment_image( $image);?></div><?php
+>>>>>>> a6e0423a86ed71a5cfebab623f68f3be014bd1c8
 			}?>
 
-			<div class="black-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>
+			<div class="white-bg"><span><?php echo do_shortcode('[travel_grid country="canada"]');?></span></div>
 
 			<?php if(get_field('section_1_content')): ?>
 				<div class="section-content-blackbg"> <?php echo get_post_meta(get_the_ID(), "section_1_content", true); ?> </div> 
