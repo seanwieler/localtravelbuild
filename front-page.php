@@ -44,16 +44,29 @@ get_header();?>
 			<div>
 				<div class="split-image" style="background-image: url(<?php the_field('section_2_left_image'); ?>)">
 					<div class="link-txt-bg">
-						<div class="hero-title"><h1>travel stories</h1></div>
+						<div class="link-title"><h1>travel stories</h1></div>
+						<div class="button-center"><?php echo do_shortcode('[maxbutton id="3"]');?></div>
 					</div>
 				</div>
 				<div class="split-image" style="background-image: url(<?php the_field('section_2_right_image'); ?>)">
-					<div class="hero-title"><h1>photography</h1></div>
+					<div class="link-txt-bg">
+						<div class="link-title"><h1>photography</h1></div>
+						<div class="button-center"><?php echo do_shortcode('[maxbutton id="4"]');?></div>
+					</div>
 				</div>
-			</div>
 			<?php endif;
 
-		endwhile; // End of the loop.
+			if(get_field('quote_bg_image')): ?>
+			<div class="quote-bg" style="background-image: url(<?php the_field('quote_bg_image'); ?>)">
+				<div class="quote"><blockquote>You must live in the present, launch yourself on every wave, find your eternity in each
+moment. Fools stand on their island of opportunities and look toward another land.
+There is no other land; there is no other life but this.</blockquote></div>
+			</div>
+			<?php endif; ?>
+
+	</main>
+	</div> <?php
+	endwhile; // End of the loop.
 
 get_sidebar();
 get_footer();
