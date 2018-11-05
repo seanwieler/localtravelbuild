@@ -54,16 +54,14 @@ get_header();?>
 						<div class="button-center"><?php echo do_shortcode('[maxbutton id="4"]');?></div>
 					</div>
 				</div>
+			</div>
 			<?php endif;
 
 			if(get_field('quote_bg_image')): ?>
 			<div class="quote-bg" style="background-image: url(<?php the_field('quote_bg_image'); ?>)">
-				<div class="quote"><blockquote>You must live in the present, launch yourself on every wave, find your eternity in each
-moment. Fools stand on their island of opportunities and look toward another land.
-There is no other land; there is no other life but this.</blockquote></div>
 			</div>
 			<?php endif; ?>
-
+			
 	</main>
 	</div> <?php
 	endwhile; // End of the loop.
