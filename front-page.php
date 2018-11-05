@@ -41,7 +41,7 @@ get_header();?>
 			<?php endif;
 
 			if(get_field('section_2_left_image')): ?>
-			<div>
+			<div class="content-links">
 				<div class="split-image" style="background-image: url(<?php the_field('section_2_left_image'); ?>)">
 					<div class="link-txt-bg">
 						<div class="link-title"><h1>travel stories</h1></div>
@@ -59,8 +59,13 @@ get_header();?>
 
 			if(get_field('quote_bg_image')): ?>
 			<div class="quote-bg" style="background-image: url(<?php the_field('quote_bg_image'); ?>)">
+				<div class="quote"><?php the_field('quote');?></div>
 			</div>
 			<?php endif; ?>
+
+			<div><?php echo do_shortcode('[parallax-scroll id="174"]');?></div>
+
+			<div class="test"><p>THis is test stuff</p></div>
 			
 	</main>
 	</div> <?php
