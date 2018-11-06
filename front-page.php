@@ -63,7 +63,13 @@ get_header();?>
 			</div>
 			<?php endif; ?>
 
-			<div><?php echo do_shortcode('[parallax-scroll id="174"]');?></div>
+			<div><?php echo do_shortcode('[parallax-scroll id="174"]');?></div> <?php
+
+			if(get_field('about_image')): ?>
+			<div class="about-bg" style="background-image: url(<?php the_field('about_image'); ?>">
+				<div class="about-image"><?php the_field('about_image');?></div> 
+			</div>
+		<?php endif; ?>
 
 			<div class="test"><p>THis is test stuff</p></div>
 			
