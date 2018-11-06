@@ -88,6 +88,11 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+@media only screen and (min-width:671px) and (max-width:980px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
 /* ## Grouping content
 	 ========================================================================== */
 /**
@@ -746,12 +751,13 @@ span.rpwwt-post-title:hover {
 @media only screen and (max-width:670px) {
   .front-hero {
     margin-top: -80px;
+    height: 52vh;
     background-size: contain;
   }
 }
 .hero-txt-bg {
   position: relative;
-  margin-top: 280px;
+  margin-top: 500px;
   width: 50%;
   float: right;
   background-color: rgba(0, 0, 0, 0.4);
@@ -760,8 +766,16 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .hero-txt-bg {
+    margin: 0;
     float: none;
     width: 100%;
+    background-color: #000000;
+  }
+}
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .hero-txt-bg {
+    margin-top: 175px;
+    width: 75%;
   }
 }
 .hero-text {
@@ -777,14 +791,15 @@ span.rpwwt-post-title:hover {
 }
 .hero-title {
   color: #ffcc00;
-  width: 40%;
+  width: 100%;
   line-height: 2em;
+  padding-top: 20px;
   /* border-bottom:  2px solid @brand-yellow; */
 }
 @media only screen and (max-width:670px) {
   .hero-title {
-    width: 80%;
-    margin: 0 10% 0 10%;
+    width: 85%;
+    margin: 25% 10% 0 10%;
     font-size: 10px;
   }
 }
@@ -793,6 +808,11 @@ span.rpwwt-post-title:hover {
 .maxbutton-3.maxbutton.maxbutton-travel-stories,
 .maxbutton-4.maxbutton.maxbutton-photography {
   margin-bottom: 40px;
+}
+@media only screen and (max-width:670px) {
+  .maxbutton-1.maxbutton.maxbutton-hero-story {
+    margin-left: 30px;
+  }
 }
 .button-center {
   text-align: center;
@@ -812,8 +832,23 @@ span.rpwwt-post-title:hover {
     font-size: 25px;
   }
 }
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .decorated {
+    font-size: 1.75em;
+  }
+}
 .content-links {
   height: 536px;
+}
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .content-links {
+    height: 187px;
+  }
+}
+@media only screen and (max-width:670px) {
+  .content-links {
+    height: auto;
+  }
 }
 .link-txt-bg {
   position: relative;
@@ -823,13 +858,20 @@ span.rpwwt-post-title:hover {
 .link-txt-bg .button-center {
   padding-bottom: 50px;
 }
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .link-txt-bg .button-center {
+    padding-bottom: 0;
+  }
+}
 @media only screen and (max-width:670px) {
   .link-txt-bg {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translate(0, 0);
+    width: 75%;
+    margin: 0 10%;
+  }
+}
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .link-txt-bg {
+    margin: 0 75px;
   }
 }
 .link-title {
@@ -843,21 +885,51 @@ span.rpwwt-post-title:hover {
 }
 @media only screen and (max-width:670px) {
   .link-title {
-    width: 80%;
-    margin: 0 10% 0 10%;
+    width: 100%;
     font-size: 10px;
+    padding: 30px 0 20px 0;
+  }
+}
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .link-title {
+    width: 100%;
+    padding-top: 17px;
+    font-size: 14px;
   }
 }
 .quote-bg {
   height: auto;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .quote-bg {
+    background-size: 100%;
+  }
+}
+@media only screen and (max-width:670px) {
+  .quote-bg {
+    background-size: cover;
+  }
 }
 .quote {
   padding: 110px 0 146px 0;
   text-align: center;
   font-size: 20px;
+}
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .quote {
+    padding: 25px 0 23px 0;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:670px) {
+  .quote {
+    padding: 10px;
+    font-size: 10px;
+    width: 100%;
+  }
 }
 .test {
   height: 600px;
@@ -1289,6 +1361,11 @@ ul#menu-main-menu {
     padding: 0 10px 20px 10px;
   }
 }
+@media only screen and (min-width:671px) and (max-width:980px) {
+  .rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li {
+    font-size: 17px;
+  }
+}
 .rpw-home aside#recent-posts-widget-with-thumbnails-2 > * > ul > li img {
   width: 100%;
   height: auto;
@@ -1305,6 +1382,7 @@ ul#menu-main-menu {
 }
 @media only screen and (max-width:670px) {
   .split-image {
+    height: 200px;
     width: 100%;
     float: none;
   }
