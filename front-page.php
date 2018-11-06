@@ -66,11 +66,23 @@ get_header();?>
 			<div><?php echo do_shortcode('[parallax-scroll id="174"]');?></div> <?php
 
 			if(get_field('about_image')): ?>
-			<div class="about-bg" style="background-image: url(<?php the_field('about_image'); ?>">
-				<div class="about-image"><?php the_field('about_image');?></div> 
+			<div class="about-bg" style="background-image: url(<?php the_field('about_bg'); ?>"><?php
+			$image2 = get_field('about_image');
+			$size2 = 'thumbnail'; // (thumbnail, medium, large, full or custom size) ?>
+				<div class="about-image"><?php echo wp_get_attachment_image( $image2 , $size2);?></div> 
+				<div class="about-name"><h5><?php the_field('about_name');?></h5></div>
+				<div class="about-title"><p><?php the_field('about_title');?></p></div>
+				<div class="about-text"><?php the_field('about_text');?></div>
+				<div class="about-btn"><?php echo do_shortcode('[maxbutton id="5"]');?></div>
+			</div>
+			<?php endif;
+
+			if(get_field('contact_title')): ?>
+			<div class="contact-bg" style="background-image: url(<?php the_field('contact_bg'); ?>">
+				<div class="contact-title"><h1><?php the_field('contact_title');?></h1></div>
+				<div class="about-btn"><?php echo do_shortcode('[maxbutton id="6"]');?></div>
 			</div>
 		<?php endif; ?>
-
 			<div class="test"><p>THis is test stuff</p></div>
 			
 	</main>
