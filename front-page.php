@@ -82,6 +82,13 @@ get_header();?>
 				<div class="contact-title"><h1><?php the_field('contact_title');?></h1></div>
 				<div class="about-btn"><?php echo do_shortcode('[maxbutton id="6"]');?></div>
 			</div>
+			<?php endif;
+
+			if(get_field('follow_me_title')): ?>
+			<div class="follow-bg" style="background-image: url(<?php the_field('follow_me_bg'); ?>">
+				<div class="follow-title"><h1><?php the_field('follow_me_title');?></h1></div>
+				<div class="about-btn"><?php echo do_shortcode('[maxbutton id="6"]');?></div>
+			</div>
 		<?php endif; ?>
 			<div class="test"><p>THis is test stuff</p></div>
 			
